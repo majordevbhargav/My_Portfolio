@@ -1,12 +1,10 @@
 # Dev Bhargav Portfolio
 
-A personal portfolio website presenting my engineering journey, professional work, projects, credentials, and future direction.
+Personal portfolio website showcasing my professional journey, engineering projects, enterprise networking work, software development, credentials, and research interests.
 
-## About
+## Overview
 
-The portfolio reflects my work across enterprise networking, pre-sales engineering, software development, AI, network security, and research-oriented projects.
-
-It also documents the path from Computer Science education and NDA/SSB preparation to professional engineering and my goal of pursuing research in Japan.
+The portfolio presents work across enterprise networking, pre-sales engineering, automation, software development, AI-assisted projects, and network security. It is also used to document the progression from academic learning into professional engineering.
 
 ## Sections
 
@@ -14,7 +12,7 @@ It also documents the path from Computer Science education and NDA/SSB preparati
 - About
 - Engineering journey
 - Selected projects
-- Work and experience
+- Professional work
 - Credentials and certifications
 - Interests beyond work
 - Contact
@@ -27,26 +25,31 @@ It also documents the path from Computer Science education and NDA/SSB preparati
 - Responsive web design
 - Custom animations and interactions
 
-## Running locally
+## Run Locally
 
-Clone the repository and open `index.html` in a browser. The site is a static portfolio, so no backend is required.
+This is a static website, so no backend service is required.
 
-## Future direction
+```bash
+git clone https://github.com/majordevbhargav/My_Portfolio.git
+cd My_Portfolio
+```
 
-The portfolio will evolve as my engineering career develops, with more emphasis on:
+Open `index.html` in a browser, or serve the directory through a local static web server.
 
-- Enterprise networking
-- Cisco technologies
-- Network security
-- Automation
+## Portfolio Direction
+
+The portfolio will evolve alongside my work in:
+
+- Enterprise networking and Cisco technologies
+- Network security and Zero Trust
+- Network automation
 - Java and backend engineering
 - AI/ML for network intelligence
-- Research and projects connected to Japan
+- Research and graduate study in Japan
 
 ## Author
 
 **Dev Bhargav**
 
-GitHub: https://github.com/majordevbhargav
-
-LinkedIn: https://www.linkedin.com/in/devbhargav100
+- GitHub: https://github.com/majordevbhargav
+- LinkedIn: https://www.linkedin.com/in/devbhargav100
