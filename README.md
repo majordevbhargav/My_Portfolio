@@ -1,55 +1,76 @@
-# Dev Bhargav Portfolio
+# Dev Bhargav | Enterprise Networking & Network Automation
 
-Personal portfolio website showcasing my professional journey, engineering projects, enterprise networking work, software development, credentials, and research interests.
+Personal portfolio for **Dev Bhargav**, an engineer focused on enterprise networking, network automation, cybersecurity, and AI-assisted network intelligence.
 
-## Overview
+## Engineering Focus
 
-The portfolio presents work across enterprise networking, pre-sales engineering, automation, software development, AI-assisted projects, and network security. It is also used to document the progression from academic learning into professional engineering.
+- **Enterprise Networking:** Cisco routing, switching, SD-WAN, wireless, ISE, and Zero Trust architectures
+- **Network Automation:** Python, Netmiko, Ansible, CLI automation, configuration workflows, and infrastructure tooling
+- **Network Security:** Endpoint posture, identity-aware access, security analytics, and Cisco security technologies
+- **Network Intelligence:** NetFlow analytics, anomaly detection, context-aware scoring, and ML-assisted detection
+- **Software Engineering:** Java, backend development, REST APIs, databases, React, and web applications
 
-## Sections
+## Selected Engineering Projects
 
-- Home
-- About
-- Engineering journey
-- Selected projects
-- Professional work
-- Credentials and certifications
-- Interests beyond work
-- Contact
+| Project | Focus |
+|---|---|
+| [Network-Automation-With-Python](https://github.com/majordevbhargav/Network-Automation-With-Python) | Python-based Cisco network automation and infrastructure workflows |
+| [FlowWatch](https://github.com/majordevbhargav/FlowWatch) | Self-hosted NetFlow anomaly detection and network traffic intelligence |
+| [Context-Aware-Network-Anomaly-Detection](https://github.com/majordevbhargav/Context-Aware-Network-Anomaly-Detection) | Context-aware network anomaly detection using traffic and device context |
+| [Posture_Check](https://github.com/majordevbhargav/Posture_Check) | Endpoint posture assessment and Cisco ISE session monitoring |
+| [Cisco-XDR](https://github.com/majordevbhargav/Cisco-XDR) | Exploration and tooling around security telemetry and XDR workflows |
+| [Ansible-Lan-Automation](https://github.com/majordevbhargav/Ansible-Lan-Automation) | LAN configuration automation using Ansible |
+| [CLI-LAN-Automation](https://github.com/majordevbhargav/CLI-LAN-Automation) | CLI-driven LAN automation workflows |
+| [subnet_kit](https://github.com/majordevbhargav/subnet_kit) | Networking utilities for subnetting and IP calculations |
+
+## Software & AI Work
+
+Alongside networking projects, this portfolio includes software and AI projects covering web applications, career matching, research tooling, university discovery, and Japan-focused planning tools.
+
+## Current Direction
+
+Building deeper expertise at the intersection of:
+
+**Enterprise Networking → Automation → Security → Network Intelligence → AI/ML**
+
+The goal is to build systems that do more than configure infrastructure: they should understand network state, detect unusual behavior, incorporate context, and help engineers make better operational decisions.
 
 ## Technology
 
-- HTML5
-- CSS3
+**Networking**
+- Cisco IOS / IOS XE
+- Cisco ISE
+- Cisco SD-WAN
+- Routing & Switching
+- NetFlow
+- TCP/IP
+
+**Automation & Engineering**
+- Python
+- Ansible
+- Netmiko
+- Java
+- REST APIs
+- Git / GitHub
+
+**Software & AI**
+- React
 - JavaScript
-- Responsive web design
-- Custom animations and interactions
+- HTML / CSS
+- Machine Learning fundamentals
+- Network anomaly detection
 
-## Run Locally
+## Portfolio
 
-This is a static website, so no backend service is required.
+🌐 **Website:** https://dev-bhargav-portfolio.vercel.app/
 
-```bash
-git clone https://github.com/majordevbhargav/My_Portfolio.git
-cd My_Portfolio
-```
+💻 **GitHub:** https://github.com/majordevbhargav/
 
-Open `index.html` in a browser, or serve the directory through a local static web server.
+💼 **LinkedIn:** https://www.linkedin.com/in/devbhargav100
 
-## Portfolio Direction
+## About
 
-The portfolio will evolve alongside my work in:
+**Dev Bhargav**  
+B.Tech Computer Science & Engineering | Enterprise Networking | Network Automation | Cybersecurity | AI/ML
 
-- Enterprise networking and Cisco technologies
-- Network security and Zero Trust
-- Network automation
-- Java and backend engineering
-- AI/ML for network intelligence
-- Research and graduate study in Japan
-
-## Author
-
-**Dev Bhargav**
-
-- GitHub: https://github.com/majordevbhargav
-- LinkedIn: https://www.linkedin.com/in/devbhargav100
+This repository documents the engineering work, experiments, projects, and learning path behind the portfolio.
