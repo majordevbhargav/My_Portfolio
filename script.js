@@ -33,6 +33,34 @@
   window.__waNumber = waNumber;
 })();
 
+// Persistent light/dark theme toggle
+(function () {
+  var root = document.documentElement;
+  var button = document.getElementById("themeToggle");
+  var meta = document.getElementById("themeColorMeta");
+  if (!button) return;
+
+  function applyTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    var dark = theme === "dark";
+    button.setAttribute("aria-pressed", dark ? "true" : "false");
+    button.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+    var icon = button.querySelector(".theme-toggle-icon");
+    var label = button.querySelector(".theme-toggle-label");
+    if (icon) icon.textContent = dark ? "☀" : "☾";
+    if (label) label.textContent = dark ? "Light mode" : "Dark mode";
+    if (meta) meta.setAttribute("content", dark ? "#0b1120" : "#2451F0");
+    try { localStorage.setItem("devbhargav-theme", theme); } catch (e) {}
+  }
+
+  var initialTheme = root.getAttribute("data-theme");
+  if (initialTheme !== "dark" && initialTheme !== "light") initialTheme = "light";
+  applyTheme(initialTheme);
+  button.addEventListener("click", function () {
+    applyTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+  });
+})();
+
 // Scroll reveal
 (function () {
   var els = document.querySelectorAll("[data-reveal]");
