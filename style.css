@@ -800,3 +800,31 @@ nav a.nav-link { font-weight: 650; }
   .github-activity-card { padding: 16px; }
   .github-graph-link { padding: 12px; }
 }
+
+
+.github-contribution-graph {
+  display:block;
+  width:100%;
+  min-width:650px;
+  height:auto;
+}
+.github-contribution-iframe {
+  display:block;
+  width:100%;
+  min-width:650px;
+  height:190px;
+  border:0;
+  background:transparent;
+}
+.github-graph-link:has(.github-contribution-iframe) {
+  padding:10px 8px 2px;
+  overflow-x:auto;
+}
+
+
+/* Live contribution embed from codeadamca/github-contributions */
+.github-contribution-iframe { color-scheme: dark; }
+.github-graph-link:has(.github-contribution-iframe) { background:#0d1117; }
+@media (max-width: 700px) {
+  .github-contribution-iframe { height:180px; min-width:620px; }
+}
