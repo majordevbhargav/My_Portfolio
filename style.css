@@ -415,3 +415,52 @@ footer.site-footer { padding: 100px 0 50px; position: relative; }
   [data-reveal] { opacity: 1; transform: none; transition: none; }
   .photo-frame img, .about-portrait img, .blue-box img { transition: none; }
 }
+
+/* THEME TOGGLE */
+.theme-toggle-item { display: flex; align-items: center; }
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  border: 1px solid var(--blue-line); border-radius: 999px;
+  padding: 8px 12px; color: var(--ink); background: var(--panel);
+  font-family: var(--mono); font-size: 11px; letter-spacing: .02em;
+  cursor: pointer; white-space: nowrap; transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.theme-toggle:hover { border-color: var(--blue); color: var(--blue); }
+.theme-toggle:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.theme-toggle-icon { font-size: 16px; line-height: 1; }
+html { color-scheme: light; }
+html[data-theme="dark"] { color-scheme: dark; }
+html[data-theme="dark"] {
+  --bg: #0b1120;
+  --panel: #111b2e;
+  --ink: #e8eef9;
+  --ink-dim: #a3b2ca;
+  --blue: #83a4ff;
+  --blue-deep: #1a2d55;
+  --blue-pale: #182743;
+  --blue-line: #293955;
+  --gold: #f0c36d;
+}
+html[data-theme="dark"] body { background: var(--bg); color: var(--ink); }
+html[data-theme="dark"] nav { background: rgba(11, 17, 32, .9); border-bottom-color: var(--blue-line); }
+html[data-theme="dark"] .bg-blob { opacity: .22; }
+html[data-theme="dark"] .tint,
+html[data-theme="dark"] section.tint { background: rgba(20, 31, 51, .82); }
+html[data-theme="dark"] .theme-toggle { background: #17243a; color: var(--ink); border-color: var(--blue-line); }
+html[data-theme="dark"] .blue-box { background: linear-gradient(160deg, #243f8f 0%, #101d3a 100%); }
+html[data-theme="dark"] .blue-box .cap,
+html[data-theme="dark"] .photo-frame,
+html[data-theme="dark"] .contact-quicklinks a,
+html[data-theme="dark"] .inquiry-form { background-color: var(--panel); }
+html[data-theme="dark"] .book-shelf li { background: #172743; }
+html[data-theme="dark"] .field input:focus,
+html[data-theme="dark"] .field select:focus,
+html[data-theme="dark"] .field textarea:focus { background: #17243a; }
+html[data-theme="dark"] .cert-list li.progress .c-name::after { color: #f6d18a; background: #3b2c19; }
+html[data-theme="dark"] .cta-band .btn-primary { background: #e8eef9; color: #152342; }
+html[data-theme="dark"] .cta-band .btn-primary:hover { background: #cbd8f2; }
+@media (max-width: 860px) {
+  .theme-toggle-item { padding: 8px 22px; }
+  .theme-toggle { width: 100%; justify-content: flex-start; padding: 12px 16px; border-radius: 10px; }
+  html[data-theme="dark"] nav ul.nav-links { background: var(--panel); border-bottom-color: var(--blue-line); }
+}
