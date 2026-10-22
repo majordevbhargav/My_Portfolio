@@ -40,7 +40,15 @@
     ]
   }
   </script>
-  <meta name="theme-color" content="#2451F0">
+  <meta name="theme-color" content="#2451F0" id="themeColorMeta">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("devbhargav-theme");
+        if (savedTheme === "dark" || savedTheme === "light") document.documentElement.setAttribute("data-theme", savedTheme);
+      } catch (e) {}
+    })();
+  </script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232451F0'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='white' text-anchor='middle'%3EDB%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -87,6 +95,7 @@
         <li><a class="nav-link" href="#credentials">Credentials</a></li>
         <li><a class="nav-link" href="#beyond">Beyond Work</a></li>
         <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="theme-toggle-item"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Dark mode</span></button></li>
         <li><a class="nav-cta" href="#contact">Inquire</a></li>
       </ul>
     </div>
